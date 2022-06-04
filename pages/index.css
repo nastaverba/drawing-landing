@@ -1,3 +1,98 @@
-@import url(../vendor/normalize.css);
-@import url(../vendor/fonts.css);
-@import url(../blocks/page/page.css);
+@import '../vendor/normalize.css';
+@import '../vendor/fonts.css';
+.page {
+  background: #fff;
+  color: #111;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.page__content {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.header {
+  margin: 10px;
+  background: #222;
+  color: #fff;
+  border-radius: 20px;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.header__logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: #fff;
+  background-image: url(../images/logo.svg);
+  background-position: left 3px top 3px;
+  background-size: 31px 32px;
+  background-repeat: no-repeat;
+  margin: 30px 0 60px 160px;
+  padding: 0;
+}
+
+.header__title {
+  margin: 0 0 28px 160px;
+  padding: 0;
+  font-size: 60px;
+  line-height: 69px;
+  font-weight: 700;
+  max-width: 650px;
+}
+
+.header__text {
+  max-width: 450px;
+  padding: 0;
+  margin: 0 0 108px 160px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.header__button {
+  width: 240px;
+  margin: 0 0 100px 160px;
+}
+
+.header__img {
+  background-image: url("../images/phone_header.png");
+  width: 311px;
+  height: 630px;
+  margin: 0 150px 0 82px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 40px;
+  filter: drop-shadow(0px 4px 80px rgba(0, 0, 0, 0.25));
+}
+
+.button {
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  padding: 15px 0;
+  height: 54px;
+  cursor: pointer;
+}
+
+.button_light {
+  background: #fff;
+  color: #222;
+  transition-duration: 0.5s;
+}
+.button_light:hover {
+  opacity: 0.9;
+}
+
+.button_dark {
+  background: #222;
+  color: #fff;
+}/*# sourceMappingURL=index.css.map */
