@@ -9,16 +9,16 @@
 .page__content {
   margin: 0 auto;
   max-width: 1440px;
+  padding: 10px 10px 0;
 }
 
 .header {
-  margin: 10px;
+  max-width: 1420px;
   background: #222;
   color: #fff;
   border-radius: 20px;
   padding: 0 30px;
   display: flex;
-  flex-direction: row;
   box-sizing: border-box;
 }
 
@@ -56,19 +56,19 @@
 
 .header__button {
   width: 240px;
-  margin: 0 0 100px 160px;
+  margin: 0 0 130px 160px;
 }
 
 .header__img {
   background-image: url("../images/phone_header.png");
   width: 311px;
   height: 630px;
-  margin: 0 150px 0 82px;
+  margin: 10px 150px 0 82px;
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
   position: relative;
-  top: 40px;
+  top: 30px;
   filter: drop-shadow(0px 4px 80px rgba(0, 0, 0, 0.25));
 }
 
@@ -95,4 +95,53 @@
 .button_dark {
   background: #222;
   color: #fff;
+}
+
+.cards {
+  display: grid;
+  margin: 0;
+  padding: 60px 170px 120px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+}
+
+.card {
+  background: #f8f8f8;
+  border-radius: 20px;
+  max-width: 540px;
+  min-height: 308px;
+  box-sizing: border-box;
+  padding: 40px;
+  margin: 0;
+}
+
+.card__subtitle {
+  color: #111;
+  opacity: 0.6;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+.card__title {
+  color: #111;
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 600;
+  margin: 0 0 40px;
+  padding: 0;
+  min-height: 76px;
+}
+
+.card__text {
+  color: #111;
+  opacity: 0.6;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
 }/*# sourceMappingURL=index.css.map */
