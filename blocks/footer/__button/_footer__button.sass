@@ -1,5 +1,14 @@
+@import "../../../sass/variables"
+
 .footer__button
   width: 470px
-  font-size: 16px
-  line-height: 24px
   font-weight: 600
+
+@media (max-width: $screen-lg)
+  .footer__button
+    width: 240px
+
+@media (max-width: $screen-md)
+  .footer__button
+    width: 260px
+

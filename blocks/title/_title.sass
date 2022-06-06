@@ -1,3 +1,5 @@
+@import "../../sass/_variables"
+
 .title
   max-width: 1103px
   font-size: 60px
@@ -5,3 +7,17 @@
   font-weight: 600
   margin: 0 0 120px
   padding: 0
+
+@media (max-width: $screen-lg)
+  .title
+    max-width: 648px
+    font-size: 33px
+    line-height: 37px
+    margin: 0 0 70px
+
+@media (max-width: $screen-md)
+  .title
+    max-width: 260px
+    font-size: 26px
+    line-height: 31px
+
