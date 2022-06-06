@@ -1,3 +1,5 @@
+@import '../_variables'
+
 @mixin button
   .button
     border: none
@@ -8,6 +10,18 @@
     padding: 15px 0
     height: 54px
     cursor: pointer
+
+  @media (max-width: $screen-lg)
+    .button
+      height: 48px
+      font-size: 14px
+      padding: 12px 0
+
+  @media (max-width: $screen-md)
+    .button
+      height: 44px
+      font-size: 12px
+      padding: 10px 0
 
 @mixin button_light
   .button_light

@@ -1,3 +1,14 @@
+@import '../../../../sass/_variables'
+
 .form__input_type_string
   width: 470px
   height: 54px
+
+@media (max-width: $screen-lg)
+  .form__input_type_string
+    padding-top: 15px
+    padding-bottom: 15px
+
+@media (max-width: $screen-md)
+  .form__input_type_string
+    width: 260px
