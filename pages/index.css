@@ -107,6 +107,15 @@
   align-items: center;
 }
 
+.title {
+  max-width: 1103px;
+  font-size: 60px;
+  line-height: 68px;
+  font-weight: 600;
+  margin: 0 0 120px;
+  padding: 0;
+}
+
 .cards {
   display: grid;
   margin: 0;
@@ -159,15 +168,6 @@
 .examples {
   padding: 0 170px 60px;
   margin: 0;
-}
-
-.examples__title {
-  max-width: 1103px;
-  font-size: 60px;
-  line-height: 68px;
-  font-weight: 600;
-  margin: 0 0 120px;
-  padding: 0;
 }
 
 .examples__images {
