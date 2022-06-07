@@ -1,5 +1,7 @@
+@import "../../../sass/mixins/_grid"
+
 .form__body
-  display: grid
+  @include grid
   grid-template-columns: repeat(2, 1fr)
   column-gap: 60px
   row-gap: 20px

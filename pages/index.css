@@ -487,6 +487,7 @@
   }
 }
 .form__body {
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   -moz-column-gap: 60px;
