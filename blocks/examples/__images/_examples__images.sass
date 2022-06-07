@@ -1,4 +1,5 @@
 @import "../../../sass/mixins/_grid"
+@import "../../../sass/mixins/_flex"
 @import "../../../sass/_variables"
 
 .examples__images
@@ -10,3 +11,7 @@
 @media (max-width: $screen-lg)
   .examples__images
     gap: 15px
+
+@media (max-width: $screen-md)
+  .examples__images
+    @include flex

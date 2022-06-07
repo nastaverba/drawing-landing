@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Приложение для рисования</title>
   <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./vendor/styles/slider.css">
 </head>
 
 <body>
@@ -18,11 +20,11 @@
         <h1 class="header__title">Не умеете рисовать? Не беда!</h1>
         <p class="header__text">С помощью нашего приложения вы можете чиркануть каляку и получить шедевр.</p>
         <div class="header__img"></div>
-        <button class="header__button button button_light" onclick="document.location='#'">Подробнее</button>
+        <button class="header__button button button_light" onclick="document.location='#more'">Подробнее</button>
       </header>
 
       <main class="main">
-        <section class="cards">
+        <section class="cards cards_type_desktop">
           <div class="card">
             <p class="card__subtitle">AI</p>
             <h3 class="card__title">Умный интелект приложения</h3>
@@ -38,19 +40,66 @@
           </div>
         </section>
 
-        <section>
+        <section class="cards cards_type_mobile">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                  <p class="card__subtitle" style="font-family: Inter;">AI</p>
+                  <h3 class="card__title" style="font-family: Inter;">Умный интелект приложения</h3>
+                  <p class="card__text" style="font-family: Inter;">С помощью AI приложение анализирует картины мастеров
+                    и современных практиков
+                    рисования,
+                    и достраивает картину за вас.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <p class="card__subtitle">Ч/Б и Цвет</p>
+                  <h3 class="card__title">Рисуйте в любом стиле</h3>
+                  <p class="card__text">Будь то карандашная каляка-маляка или цветное произведение, приложение поможет в
+                    любой
+                    ситуации.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+
+        <section id="more">
           <h2 class="title">Чик-чирик и ваша каляка превращается в изумительное произведение искусства.</h2>
         </section>
 
-        <section class="examples">
+        <section class="examples examples_type_desktop">
           <div class="examples__images">
-            <img src="./images/phone_example_1.png" alt="" class="examples__image">
-            <img src="./images/phone_example_2.png" alt="" class="examples__image">
-            <img src="./images/phone_example_3.png" alt="" class="examples__image">
+            <img src="./images/phone_example_1.png" alt="Изображение каляки" class="examples__image">
+            <img src="./images/phone_example_2.png" alt="Достраивание картинки" class="examples__image">
+            <img src="./images/phone_example_3.png" alt="Готовый результат" class="examples__image">
           </div>
         </section>
 
-        <section class="cards">
+        <section class="examples examples_type_mobile">
+          <div class="examples__images">
+            <div class="swiper swiper_vertical">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./images/phone_example_1.png" alt="" class="examples__image">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/phone_example_2.png" alt="" class="examples__image">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/phone_example_3.png" alt="" class="examples__image">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            </div>
+        </section>
+
+        <section class="cards cards_type_desktop">
           <div class="card">
             <p class="card__subtitle">Быстро</p>
             <h3 class="card__title">Проблем с рисованием — нет</h3>
@@ -63,6 +112,32 @@
             <p class="card__text">Раз, два, три, больше нечего тут рассказать.</p>
           </div>
         </section>
+
+        <section class="cards cards_type_mobile">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                  <p class="card__subtitle" style="font-family: Inter;">Быстро</p>
+                  <h3 class="card__title" style="font-family: Inter;">Проблем с рисованием — нет</h3>
+                  <p class="card__text" style="font-family: Inter;">Рисуйте в приложении доступными кистями: карандаш,
+                    маркер,
+                    линер, масляная кисть и
+                    многие другие...</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <p class="card__subtitle">Просто</p>
+                  <h3 class="card__title">Нарисовали, преобразовали, сохранили</h3>
+                  <p class="card__text">Раз, два, три, больше нечего тут рассказать.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
 
         <section>
           <h2 class="title">Качайте приложение и улучшайте свои художества, а потом хвастайтесь ими!</h2>
@@ -94,6 +169,9 @@
       </footer>
     </div>
   </div>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./scripts/script.js"></script>
 </body>
 
 </html>
