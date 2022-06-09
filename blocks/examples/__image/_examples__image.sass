@@ -1,0 +1,15 @@
+@import "../../../sass/_variables"
+
+.examples__image
+  max-width: 350px
+  filter: drop-shadow(0px 4px 80px rgba(0, 0, 0, 0.25))
+
+@media (max-width: $screen-lg)
+  .examples__image
+     max-width: 226px
+
+@media (max-width: $screen-sm)
+  .examples__image
+     max-width: 260px
+     filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.25))
+     margin: 30px 0

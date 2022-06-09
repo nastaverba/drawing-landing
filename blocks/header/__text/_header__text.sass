@@ -1,0 +1,33 @@
+@import "../../../sass/variables"
+
+.header__text
+  max-width: 450px
+  padding: 0
+  margin: 0 0 108px 160px
+  font-size: 18px
+  line-height: 26px
+  font-weight: 400
+  opacity: .7
+
+@media (max-width: $screen-lg)
+  .header__text
+    margin: 0 0 108px 20px
+
+@media (max-width: $screen-md)
+  .header__text
+    margin: 0 0 250px 20px
+    font-size: 15px
+    line-height: 20px
+    max-width: 360px
+
+@media (max-width: $screen-sm)
+  .header__text
+    margin: 0 auto 20px
+    max-width: 410px
+
+@media (max-width: $screen-mob)
+  .header__text
+    margin-bottom: 50px
+    font-size: 12px
+    line-height: 15px
+    max-width: 260px

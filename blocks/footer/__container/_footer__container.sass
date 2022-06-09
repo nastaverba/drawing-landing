@@ -1,0 +1,27 @@
+@import "../../../sass/variables"
+
+.footer__container
+  max-width: 1420px
+  background: $color-inverse
+  color: $text-inverse
+  border-radius: 20px
+  padding: 60px 160px
+  box-sizing: border-box
+  min-height: 470px
+  margin: 0
+
+@media (max-width: $screen-lg)
+  .footer__container
+    max-width: 1100px
+    padding: 50px
+
+@media (max-width: $screen-md)
+  .footer__container
+    //max-width: 748px
+    min-height: 400px
+
+@media (max-width: $screen-sm)
+  .footer__container
+    margin: 0 auto
+    padding: 20px
+    min-height: 266px

@@ -1,0 +1,52 @@
+@import '../_variables'
+
+@mixin button
+  .button
+    border: none
+    border-radius: 8px
+    font-size: 16px
+    line-height: 24px
+    font-weight: 600
+    padding: 15px 0
+    height: 54px
+    cursor: pointer
+
+  @media (max-width: $screen-md)
+    .button
+      height: 48px
+      font-size: 14px
+      padding: 12px 0
+
+  @media (max-width: $screen-mob)
+    .button
+      height: 44px
+      font-size: 12px
+      padding: 10px 0
+
+@mixin button_light
+  .button_light
+    background: #fff
+    color: #222
+    -webkit-transition-duration: 0.5s
+    -o-transition-duration: 0.5s
+    transition-duration: 0.5s
+
+    &:hover
+      opacity: .9
+
+@mixin button_dark
+  .button_dark
+    background: #222
+    color: #fff
+    -webkit-transition-duration: 0.5s
+    -o-transition-duration: 0.5s
+    transition-duration: 0.5s
+
+    &:hover
+      opacity: .9
+
+@include button
+@include button_light
+@include button_dark
+
+
