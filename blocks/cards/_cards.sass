@@ -14,12 +14,16 @@
   .cards
     padding: 70px 30px
 
-@media (max-width: $screen-md)
+@media (max-width: $screen-sm)
   .cards
     padding: 70px 10px
     @include flex
     align-items: center
-    max-width: 320px
+    max-width: 450px
     box-sizing: border-box
+
+@media (max-width: $screen-mob)
+  .cards
+    max-width: 320px
 
 
